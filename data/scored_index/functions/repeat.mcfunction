@@ -5,12 +5,12 @@
 # 
 # repeat をデクリメントしていき、0 になったら要素を返す
 #
-# @input
-#     score repeat
-#     storage si:temp
+# E extends Array | number | string | Object
 #
-# @output
-#     storage si:res
+# @input
+#   score repeat _ : int
+#   storage si:
+#     temp : E[]
 
 # ----- 定義
 

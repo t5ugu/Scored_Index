@@ -1,14 +1,17 @@
 #> scored_index:index
 #
 # scoreboardを配列のインデックスとして用いる  
-# 以下の _E_ は何でも構わない
+#
+# E extends Array | number | string | Object
 #
 # @input
-#     score index 整数型 objective: _
-#     storage si:args E配列型
+#   score index _ : int
+#   storage si:
+#     args : E[]
 #
 # @output
-#     storage si:res E型 := E[index]
+#   storage si:
+#     res : E = args[index]
 
 # ----- 定義
 
