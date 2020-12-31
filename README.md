@@ -3,7 +3,7 @@
 誰にでも作れる程度のものなので, ライセンスはありません.  
 見て学んでください.
 
-コマンド実行数は `4 * (si:args.length - index) + 5` です.
+コマンド実行数は `4 * (si:args.length - (index % si:args.length)) + 7` です.
 
 ## このdatapackが使うもの
 * スコアボード  
