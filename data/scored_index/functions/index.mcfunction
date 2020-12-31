@@ -27,9 +27,12 @@
 
 # ----- 移し替え
 
-    #define score_holder repeat = args.length - index
-        execute store result score repeat _ if data storage si: args[]
-        scoreboard players operation repeat _ -= index _
+    #define score_holder #length = args.length - (index % args.length)
+    #define score_holder #temp
+        execute store result score #length _ if data storage si: args[]
+        scoreboard players operation #temp _ = index _
+        scoreboard players operation #temp _ %= #length _
+        scoreboard players operation #length _ -= #temp _
 
     #define storage si:temp E配列型 = si:args
         data modify storage si: temp set from storage si: args
