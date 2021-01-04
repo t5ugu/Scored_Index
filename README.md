@@ -1,28 +1,32 @@
-# Scored Index
+# Scored Utility
 
 誰にでも作れる程度のものなので, ライセンスはありません.  
-見て学んでください.
+見て学んでください。
 
-コマンド実行数は `4 * (si:args.length - (index % si:args.length)) + 7` です.
+## Get by Index
+コマンド実行数は `4 * (配列の長さ - (インデックス % 配列の長さ)) + 7` です。
+
+### 使い方
+1. `su:index io.in.args` に配列を, `su:index io.in.index` にインデックスを入れる
+2. `function utils:get_by_index` を叩く
+3. `su:index io.out` に `配列のインデックス番目の要素` が入る
 
 ## このdatapackが使うもの
-* スコアボード  
-  * スコアオブジェクティブ
+* Scoreboard  
+  * Objective
     * `_` ロード時に生成
-  * スコアホルダー
-    * `index` 引数の値を入れる
-    * `#repeat` 内部で用いる
-    * `#count` 内部で用いる
-* ストレージ
-  * `si`
-    * `args` 引数の値を入れる
-    * `res` 返り値が入る
-    * `temp` 内部で用いる
+  * Holder
+    * `#temp` 内部で用いる
+    * `#length` 内部で用いる
+* Storage
+  * `su` Scored Utilityの頭文字より
+    * `index` Get by Indexで用いる
+      * `io` ユーザーが操作する部分
+        * `in`
+          * `args` 配列を入れる
+          * `index` インデックスを入れる
+        * `out` 結果が入る
+      * `temp`
 
-## 使い方
-1. `si:args` に配列を, `index` に番号を入れる
-2. `function scored_index:index` を叩く
-3. `si:res` には `si:args[index]` が入る
-
-生成にMCDUを用いました. 制作者の方に謝辞を.
-バグは気が向いたら探してつぶす予定です.
+生成にMCDUを用いました. 制作者の方に謝辞を。
+バグは気が向いたら探してつぶす予定です。
