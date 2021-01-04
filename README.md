@@ -1,15 +1,15 @@
 # Scored Utility
 
-誰にでも作れる程度のものなので, ライセンスはありません.  
+誰にでも作れる程度のものなので, ライセンスはありません。  
 見て学んでください。
 
 ## Get by Index
 コマンド実行数は `4 * (配列の長さ - (インデックス % 配列の長さ)) + 7` です。
 
 ### 使い方
-1. `su:index io.in.args` に配列を, `su:index io.in.index` にインデックスを入れる
-2. `function utils:get_by_index` を叩く
-3. `su:index io.out` に `配列のインデックス番目の要素` が入る
+1. `su:index io.in.args` に配列を, `su:index io.in.index` にインデックスを入れる。
+2. `function utils:get_by_index` を叩く。
+3. `su:index io.out` に `配列のインデックス番目の要素` が入る。
 
 ## このdatapackが使うもの
 * Scoreboard  
@@ -28,5 +28,5 @@
         * `out` 結果が入る
       * `temp`
 
-生成にMCDUを用いました. 制作者の方に謝辞を。
+一番初めに生成するときにMCDUを用いました。制作者の方に謝辞を。  
 バグは気が向いたら探してつぶす予定です。
